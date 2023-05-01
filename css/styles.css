@@ -1,0 +1,185 @@
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+.precio {
+    color: black;
+    font-weight: bold
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    display: block;
+}
+
+.navbar {
+    background-color: #1A4D2E;
+    color: white;
+}
+
+.container-fluid {
+background-color: #1A4D2E;
+}
+
+.navbar-brand {
+    background-color: #1A4D2E;
+}
+
+.navbar-toggler {
+    background-color: #1A4D2E;
+}
+
+.navbar-collapse {
+    background-color: #1A4D2E;
+}
+header {
+    background-color: #1A4D2E;
+    color:  white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+}
+
+.carousel-item img {
+height: 150px;
+}
+
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+.card {
+    height: 400px;
+    align-items: center;
+}
+.card-img-top {
+    height: 220px;
+    width: 220px;
+    align-items: center;
+}
+
+.card p {
+    text-align: center;
+}
+
+
+.iconify {
+    font-size: 2rem;
+    color: #1A4D2E;
+}
+
+.redes {
+    gap: 50px;
+    font-size: 30%;
+}
+
+
+.fotos {
+    display: grid;
+    grid-template-areas: 
+    "foto1 foto2 foto3 foto4";
+    gap: 5px;
+}
+.uno, .dos, .tres, .cuatro {
+    max-width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uno {
+    background-image: url(../img/ENA.png);
+    grid-area: foto1;
+}
+
+.dos {
+    background-image: url(../img/Imagen1.png);
+    grid-area: foto2;
+}
+
+.tres {
+    background-image: url(../img/STAR.png);
+    grid-area: foto3;
+}
+
+.cuatro {
+    background-image: url(../img/MERVICK.png);
+    grid-area: foto4;
+}
+
+.footer  {
+    font-size: 10px;
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.embed-responsive {
+    text-align: center;
+}
+
+.soldier {
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    #carouselExample {
+        margin: 0 auto;
+        
+    }
+    .carousel-item img {
+       height: 400px;    }
+}
+
+.title_productos {
+    text-align: center;
+    
+}
+
+.btn-primary {
+background-color: #1A4D2E;
+border: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .productos {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (min-width: 768px) {
+    .img-thumbnail {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .producto {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
