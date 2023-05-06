@@ -1,0 +1,59 @@
+body {
+    font-family: $fuente-principal;
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+
+
+.navbar,
+.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-brand {
+    color: $color-primario;
+    background: $color-secundario;
+}
+
+.carousel-item img {
+    height: 350px;
+}
+
+@media (min-width: $tablet) {
+    .carousel-item img {
+        height: 70vh;
+    }
+}
+
+h1,h2,h3,h5 {
+    text-align: center;
+    margin-top: $espacio-medio;
+}
+
+p {
+    font-size: $fuente-chica;
+    text-align: center;
+}
+
+.card-title {
+    margin-top: $espacio-chico;
+}
+
+footer {
+    margin-top: $espacio-grande;
+    @include flex-columna;
+
+    /*anidacion*/
+    .container-redes a {
+        color: $color-secundario;
+        text-decoration: none;
+        font-size: $icono-chico;
+    }
+}
+
+.btn {
+    border: solid 1px $color-secundario;
+    width: 200px;
+    text-align: center;
+    padding: 5px $espacio-chico;
+    border-radius: 10px;
+}

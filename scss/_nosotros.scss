@@ -1,0 +1,10 @@
+.mision_vision {
+    @include flex-columna;
+    gap: $espacio-grande;
+    margin-top: $espacio-grande;
+    /*puede ser que no este funcionando width y height? QUisiera que la imagen ocupe todo el ancho de 
+    la pantalla*/
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+}

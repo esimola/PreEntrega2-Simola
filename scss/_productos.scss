@@ -1,0 +1,64 @@
+.container-cards {
+    @include flex-columna; 
+
+    img {
+        font-size: $icono-chico;
+    }
+}
+
+.container-cards {
+    @include flex-columna;
+    gap: $espacio-medio;
+    margin-top: $espacio-grande;
+}
+
+
+.btn-primary {
+    @extend .btn;
+    background-color: $color-secundario;
+    color: $color-primario;
+    text-decoration: none;
+    max-width: 100%;
+
+    &:hover {
+        background-color: $color-secundario;
+        
+
+    }
+}
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+.card-body {
+    @include flex-columna;
+}
+
+@media (min-width: $tablet) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktopXG) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}

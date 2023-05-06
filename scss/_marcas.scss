@@ -1,0 +1,26 @@
+@media (min-width: $tablet) {
+    .contenedor-marcas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .contenedor-marcas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktopXG) {
+    .contenedor-marcas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}

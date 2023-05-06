@@ -1,0 +1,89 @@
+
+
+.uno, .dos, .tres, .cuatro {
+    @include flex-columna; 
+
+    img {
+        font-size: $icono-grande;
+    }
+}
+
+
+.btn {
+    color: $color-primario;
+    background-color: $color-secundario;
+}
+
+.container-cards {
+    @include flex-columna;
+    gap: $espacio-medio;
+    margin-top: $espacio-grande;
+}
+
+/*¿COMO DISMINUYO EL TAMAÑO DE CADA IMAGEN?PPALMENTE LA CLASE 3?*/
+
+.contenedor-banner {
+    @include flex-columna;
+    gap: $espacio-grande;
+    margin-top: $espacio-grande;
+    max-width: 100%;
+}
+
+.video {
+    text-align: center;
+    max-width: 100%;
+}
+
+@media (min-width: $tablet) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $tablet) {
+    .contenedor-banner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .contenedor-banner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktopXG) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktopXG) {
+    .contenedor-banner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}

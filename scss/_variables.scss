@@ -1,0 +1,44 @@
+/*Paleta de Colores*/
+$color-primario: #ffff;
+$color-secundario: #1A4D2E;
+$color-terciario: rgb(231, 231, 33);
+
+
+/*Tamaño de fuente*/
+$fuente-chica: 14px;
+$fuente-media: 20px;
+$icono-chico: 40px;
+$icono-grande: 60px;
+
+/*Resolución de pantalla*/
+$tablet: 768px; 
+$desktop: 992px;
+$desktopXG: 1200px;
+
+/*Separaciones (margenes y padding)*/
+$espacio-xchico: 10px;
+$espacio-chico: 20px;
+$espacio-medio: 40px;
+$espacio-grande: 60px;
+
+$fuente-principal: "Montserrat" , sans-serif;
+
+/*MIXINS*/
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+@mixin flex-fila {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+
+
+
+

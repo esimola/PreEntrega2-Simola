@@ -1,185 +1,213 @@
-
-h1 {
-    text-align: center;
+@charset "UTF-8";
+/*Paleta de Colores*/
+/*Tamaño de fuente*/
+/*Resolución de pantalla*/
+/*Separaciones (margenes y padding)*/
+/*MIXINS*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: #1A4D2E;
 }
 
-h3 {
-    text-align: center;
-}
-.precio {
-    color: black;
-    font-weight: bold
-}
-
-a {
-    text-decoration: none;
-}
-p {
-    display: block;
-}
-
-.navbar {
-    background-color: #1A4D2E;
-    color: white;
-}
-
-.container-fluid {
-background-color: #1A4D2E;
-}
-
+.navbar,
+.nav-link,
+.navbar-nav .nav-link.active,
 .navbar-brand {
-    background-color: #1A4D2E;
-}
-
-.navbar-toggler {
-    background-color: #1A4D2E;
-}
-
-.navbar-collapse {
-    background-color: #1A4D2E;
-}
-header {
-    background-color: #1A4D2E;
-    color:  white;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    color: white;
+  color: white;
+  background: #1A4D2E;
 }
 
 .carousel-item img {
-height: 150px;
+  height: 350px;
 }
 
-
-.productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+h1, h2, h3, h5 {
+  text-align: center;
+  margin-top: 40px;
 }
 
-
-
-.card {
-    height: 400px;
-    align-items: center;
-}
-.card-img-top {
-    height: 220px;
-    width: 220px;
-    align-items: center;
-}
-
-.card p {
-    text-align: center;
-}
-
-
-.iconify {
-    font-size: 2rem;
-    color: #1A4D2E;
-}
-
-.redes {
-    gap: 50px;
-    font-size: 30%;
-}
-
-
-.fotos {
-    display: grid;
-    grid-template-areas: 
-    "foto1 foto2 foto3 foto4";
-    gap: 5px;
-}
-.uno, .dos, .tres, .cuatro {
-    max-width: 100%;
-    height: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.uno {
-    background-image: url(../img/ENA.png);
-    grid-area: foto1;
-}
-
-.dos {
-    background-image: url(../img/Imagen1.png);
-    grid-area: foto2;
-}
-
-.tres {
-    background-image: url(../img/STAR.png);
-    grid-area: foto3;
-}
-
-.cuatro {
-    background-image: url(../img/MERVICK.png);
-    grid-area: foto4;
-}
-
-.footer  {
-    font-size: 10px;
-    text-align: center;
+p {
+  font-size: 14px;
+  text-align: center;
 }
 
 .card-title {
-    text-align: center;
+  margin-top: 20px;
 }
 
-.embed-responsive {
-    text-align: center;
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*anidacion*/
+}
+footer .container-redes a {
+  color: #1A4D2E;
+  text-decoration: none;
+  font-size: 40px;
 }
 
-.soldier {
-    text-align: center;
+.btn, .btn-primary {
+  border: solid 1px #1A4D2E;
+  width: 200px;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 10px;
 }
 
-@media (min-width: 900px) {
-    #carouselExample {
-        margin: 0 auto;
-        
-    }
-    .carousel-item img {
-       height: 400px;    }
+.uno, .dos, .tres, .cuatro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.uno img, .dos img, .tres img, .cuatro img {
+  font-size: 60px;
 }
 
-.title_productos {
-    text-align: center;
-    
+.btn, .btn-primary {
+  color: white;
+  background-color: #1A4D2E;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+/*¿COMO DISMINUYO EL TAMAÑO DE CADA IMAGEN?PPALMENTE LA CLASE 3?*/
+.contenedor-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+  max-width: 100%;
+}
+
+.video {
+  text-align: center;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .contenedor-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor-banner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-cards img {
+  font-size: 40px;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
 }
 
 .btn-primary {
-background-color: #1A4D2E;
-border: none;
+  background-color: #1A4D2E;
+  color: white;
+  text-decoration: none;
+  max-width: 100%;
+}
+.btn-primary:hover {
+  background-color: #1A4D2E;
 }
 
+.img {
+  width: 50%;
+  height: auto;
+}
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media (min-width: 768px) {
-    .productos {
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
 }
-
 @media (min-width: 992px) {
-    .productos {
-        grid-template-columns: repeat(3, 1fr)
-    }
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
 }
 
-@media (min-width: 768px) {
-    .img-thumbnail {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (min-width: 992px) {
-    .producto {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+/*# sourceMappingURL=styles.css.map */
